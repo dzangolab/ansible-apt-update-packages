@@ -11,4 +11,4 @@
 - name: Do apt safe upgrade
   become: yes
   apt:
-    upgrade: full
+    upgrade: "{{ apt_upgrade }}"

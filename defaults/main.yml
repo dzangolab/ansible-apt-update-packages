@@ -1,3 +1,4 @@
 ---
+apt_upgrade: safe
 packages:
   - python
