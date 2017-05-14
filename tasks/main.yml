@@ -4,5 +4,11 @@
   apt:
     pkg: "{{ item }}"
     state: latest
-    update_cache: yes
-  with_items: "{{ packages }}"
+  with_flattened:
+    - ["aptitude"]
+    - "{{ packages }}"
+
+- name: Do apt safe upgrade
+  become: yes
+  apt:
+    upgrade: full
