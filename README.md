@@ -1,6 +1,6 @@
 # Ansible Role: Update Apt packages
 
-An Ansible role to udpate apt packages. This is merely a wrapper around the apt module in order for it to be used in a playbook's sequenceof roles.
+An Ansible role to update apt packages. The aptitude package is always installed. In addition the role will perform an apt-upgrade.
 
 ## Requirements
 
@@ -11,6 +11,7 @@ This role requires Ansible 1.2 or higher.
 Ansible variables are listed below with their default values.
 
 ```
+apt_upgrade: safe
 packages:
   - python
 ```
@@ -21,10 +22,9 @@ packages:
 ---
 - hosts: webservers
   roles:
-  	- opichon.apr-update-packages
+  	- opichon.apt-update-packages
 ```
 
 ## License
 
 MIT
-
