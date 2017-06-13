@@ -13,9 +13,3 @@
   apt:
     update_cache: yes
     upgrade: "{{ apt_upgrade }}"
-
-- name: cleanup
-  become: yes
-  apt:
-    autoclean: yes
-    autoremove: yes
