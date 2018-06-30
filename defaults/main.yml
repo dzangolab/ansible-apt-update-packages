@@ -1,4 +1,7 @@
 ---
-apt_upgrade: safe
+apt_upgrade: full
 packages:
-  - python
+  - ntp
+  - python3-pip
+  - sudo
+  - unzip
