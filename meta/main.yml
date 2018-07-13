@@ -4,7 +4,7 @@ galaxy_info:
   description: Update apt packages
   company: United Asian Management Limited
 
-  license: license (MIT)
+  license: MIT
 
   min_ansible_version: 1.2
 
