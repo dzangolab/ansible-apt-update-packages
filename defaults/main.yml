@@ -5,3 +5,5 @@ packages:
   - python3-pip
   - sudo
   - unzip
+pip_executable: pip3
+pip_packages: []

@@ -13,7 +13,12 @@ Ansible variables are listed below with their default values.
 ```
 apt_upgrade: safe
 packages:
-  - python
+  - ntp
+  - python3-pip
+  - sudo
+  - unzip
+pip_executable: pip3
+pip_packages: []
 ```
 
 ## Example playbook

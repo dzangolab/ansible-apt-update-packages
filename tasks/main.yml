@@ -13,3 +13,9 @@
   apt:
     update_cache: yes
     upgrade: "{{ apt_upgrade }}"
+
+- name: "Install pip packages"
+  become: yes
+  pip:
+    name: "{{ pip_packages }}"
+    executable: "{{ pip_executable }}"
