@@ -1,18 +1,17 @@
 ---
-- name: Install required packages
-  become: yes
-  apt:
-    pkg: "{{ query('flattened', [['aptitude'], '{{ packages }}']) }}"
-    state: present
-  with_flattened:
-    - ["aptitude"]
-    - "{{ packages }}"
-
 - name: "Do apt {{ apt_upgrade }} upgrade"
-  become: yes
+  become: True
   apt:
-    update_cache: yes
+    force_apt_get: True
+    update_cache: True
     upgrade: "{{ apt_upgrade }}"
+
+- name: Install required packages
+  become: True
+  apt:
+    force_apt_get: True
+    name: "{{ packages }}"
+    state: present
 
 - name: "Install pip packages"
   become: yes
