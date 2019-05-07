@@ -1,8 +1,8 @@
 galaxy_info:
   role_name: apt-update-packages
-  author: Olivier Pichon <op@united-asian.com>
+  author: Olivier Pichon <op@dzangolab.com>
   description: Update apt packages
-  company: United Asian Management Limited
+  company: United Asian Engineering Limited
 
   license: MIT
 
