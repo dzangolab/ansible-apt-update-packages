@@ -27,7 +27,7 @@ pip_packages: []
 ---
 - hosts: webservers
   roles:
-  	- opichon.apt-update-packages
+  	- dzangolab.apt-update-packages
 ```
 
 ## License

@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: apt-update-packages
+  role_name: apt_update_packages
   author: Olivier Pichon <op@dzangolab.com>
   description: Update apt packages
   company: United Asian Engineering Limited
